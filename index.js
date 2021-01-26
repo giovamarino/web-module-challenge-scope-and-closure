@@ -28,11 +28,13 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  One is calling its parent function.
+
   2. Which of the two uses a closure? How can you tell?
+  The first example because it has access to the parent scope.
   
-  3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+  3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+  counter1 would be better if you did not want to change the value of count outside of the function and vice versa.
 */
 
 // counter1 code
@@ -62,8 +64,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+  return Math.floor(Math.random() * 3)
 }
 
 
@@ -81,9 +83,18 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(inning, numOfInnings){
+  let team1 = 0;
+  let team2 = 0;
 }
+
+for (i = 0; i < numOfInnings; i++){
+  team1;
+  team2;
+}
+
+finalScore(inning, 9)
+
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:

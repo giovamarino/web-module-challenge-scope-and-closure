@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is when functions have access to its parent functions.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+const dansroll/zoesroll do to them referring to personalDice.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+The numbers will always be between 1-6 but the number of his roll could change between attempts.
 c. What is the lexical scope of `newRoll`? 
+`newRoll` has access to everything else in this example.
 
 
 ### Task 3 - Stretch Goals
